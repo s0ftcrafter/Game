@@ -2,7 +2,6 @@ const startBtn = document.querySelector('.action-btn');
 const timeInput = document.querySelector('.time-input');
 const timerText = document.querySelector('.timer-text');
 const timerSpan = document.querySelector('.counter');
-let score;
 const shapePaths = [
     { path: "polygon(50% 0%, 0% 100%, 100% 100%)",                                                                          color: "#e74c3c" },
     { path: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",                                                                  color: "#e67e22" },
