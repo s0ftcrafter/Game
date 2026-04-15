@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    gap: 20px;
+}
+
+.heading {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.time-input {
+    max-width: 200px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.action-btn {
+    max-width: 100px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    background: #3a8f2a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.timer-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-board {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #2a2a2a;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.4);
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #6b6b2a;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.shape-item.active {
+    width: 40px;
+    height: 40px;
+    background: rgb(0, 218, 134);
+    clip-path: polygon(50% 0%, 9% 79%, 90% 80%);
+}
