@@ -81,6 +81,68 @@ body {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding-top: 60px;
+        gap: 15px;
+    }
+
+    .heading {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .game-board {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .game-over {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 40px;
+        gap: 12px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .time-input {
+        max-width: 160px;
+        padding: 8px;
+    }
+
+    .action-btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .timer-text {
+        font-size: 16px;
+    }
+
+    .game-over {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding-top: 100px;
+    }
+
+    .game-board {
+        width: 420px;
+        height: 420px;
+    }
+}
+
 .shape-item.active {
     width: 40px;
     height: 40px;

@@ -25,8 +25,9 @@ function spawnShape() {
     const div = document.createElement('div');
     div.className = 'shape-item';
     div.style.position = "absolute";
-    div.style.left = Math.floor(Math.random() * 400) + "px";
-    div.style.top = Math.floor(Math.random() * 400) + "px";
+    const boardSize = gameArea.offsetWidth - 50;
+    div.style.left = Math.floor(Math.random() * boardSize) + "px";
+    div.style.top = Math.floor(Math.random() * boardSize) + "px";
     div.style.width = Math.floor(Math.random() * 10) + 40 + "px";
     div.style.height = Math.floor(Math.random() * 10) + 40 + "px";
     div.style.clipPath = shape.path;
